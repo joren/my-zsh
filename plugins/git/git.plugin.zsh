@@ -1,3 +1,8 @@
+# Add improved Git completion function to path.
+fpath=($ZSH/plugins/git $fpath)
+autoload -U compinit
+compinit -i
+
 # Aliases
 alias g='git'
 compdef g=git
